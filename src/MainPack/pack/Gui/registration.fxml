@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="backgroud_photo" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccafc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPack.pack.Gui.RegistrationController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="51.0" prefHeight="400.0" prefWidth="192.0" style="-fx-background-color: #1c1830;">
+         <children>
+            <AnchorPane layoutY="354.0" prefHeight="18.0" prefWidth="192.0" style="-fx-background-color: #f0ba32;" />
+            <AnchorPane layoutY="32.0" prefHeight="18.0" prefWidth="192.0" style="-fx-background-color: #f0ba32;" />
+            <Label layoutX="21.0" layoutY="79.0" prefHeight="14.0" prefWidth="150.0" text=" Use the form below to enter." textAlignment="CENTER" textFill="#f0ba32" wrapText="true" />
+            <TextField fx:id="sign_enter_name" layoutX="21.0" layoutY="132.0" prefHeight="22.0" prefWidth="150.0" promptText="Enter your login here" />
+            <Button fx:id="sign_in" accessibleText="іваіва" layoutX="20.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#signIn" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #e7e6f5;" text="Sign in" textAlignment="CENTER" />
+            <Label fx:id="regtext_start" layoutX="28.0" layoutY="322.0" onMouseClicked="#showReg" onMouseEntered="#changeViewRegText_enter" onMouseExited="#changeViewRegText_exit" prefHeight="14.0" prefWidth="137.0" text=" No account? Register now!" textAlignment="CENTER" textFill="#f0b732" wrapText="true" />
+            <PasswordField fx:id="sign_enter_password" layoutX="21.0" layoutY="168.0" prefHeight="22.0" prefWidth="150.0" promptText="Enter your password here" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="reg_field" layoutX="295.0" layoutY="92.0" prefHeight="217.0" prefWidth="276.0" style="-fx-background-color: #1c1830;" visible="false">
+         <children>
+            <Label layoutX="86.0" layoutY="7.0" prefHeight="14.0" prefWidth="104.0" text="Not a member yet?" textAlignment="CENTER" textFill="#f0ba32" wrapText="true" />
+            <Label layoutX="70.0" layoutY="21.0" prefHeight="14.0" prefWidth="137.0" text="Then fill in the fields below:" textAlignment="CENTER" textFill="#f0ba32" wrapText="true" />
+            <ChoiceBox fx:id="reg_choice_role" layoutX="63.0" layoutY="161.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" />
+            <TextField fx:id="reg_enter_name" layoutX="63.0" layoutY="61.0" prefHeight="22.0" prefWidth="150.0" promptText="Enter your login here" />
+            <PasswordField fx:id="reg_enter_password" layoutX="64.0" layoutY="98.0" prefHeight="22.0" prefWidth="150.0" promptText="Enter your password here" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="closepanel_text" layoutX="402.0" layoutY="364.0" onMouseClicked="#closeReg" onMouseEntered="#changeViewCloseText_enter" onMouseExited="#changeViewCloseText_exit" prefHeight="14.0" prefWidth="64.0" text="   Sing up?" textAlignment="CENTER" visible="false" wrapText="true" />
+      <Button fx:id="reg_button" accessibleText="іваіва" layoutX="358.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#regAccount" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #1c1830;" text="Registration" textAlignment="CENTER" textFill="#dabf25" visible="false" />
+      <AnchorPane layoutX="294.0" layoutY="14.0" prefHeight="49.0" prefWidth="276.0" style="-fx-background-color: #1c1830;">
+         <children>
+            <Label layoutX="63.0" layoutY="12.0" prefHeight="25.0" prefWidth="151.0" text="La-PetraGraves" textAlignment="CENTER" textFill="#f0ba32" wrapText="true">
+               <font>
+                  <Font name="Rockwell" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

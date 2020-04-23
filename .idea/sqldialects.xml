@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/CourseDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/IngredientDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/OrderCourseDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/OrderDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/PositionDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/RoomDAO.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/MainPack/pack/DAO/UserDAO.java" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>
