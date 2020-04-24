@@ -65,7 +65,7 @@ public class RoomController {
     private RoomDAO roomDAO = new RoomDAO();
     private OrderDAO orderDAO = new OrderDAO();
 
-    public static void setID(int id) {
+    static void setID(int id) {
         orderID = id;
     }
 
@@ -114,13 +114,6 @@ public class RoomController {
 
     private void changeTextSeat(Label seat, int place, String status) {
         seat.setText("Table " + place + ": " + status);
-    }
-
-    void loadSeat() throws Exception {
-        List<Seat> seatList = roomDAO.getAll();
-        for (Seat value : seatList) {
-            changeTextSeat(labelList.get(value.getSeat() - 1), value.getSeat(), "[Engaged]");
-        }
     }
 
     private void dialogMessage(String title, String header, String content) {
@@ -223,6 +216,13 @@ public class RoomController {
             changeTextSeat(labelList.get(i), i+1, "[Free]");
         }
         loadSeat();
+    }
+
+    void loadSeat() throws Exception {
+        List<Seat> seatList = roomDAO.getAll();
+        for (Seat value : seatList) {
+            changeTextSeat(labelList.get(value.getSeat() - 1), value.getSeat(), "[Engaged]");
+        }
     }
 
     @FXML

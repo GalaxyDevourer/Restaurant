@@ -119,7 +119,8 @@ public class MenuController {
             long millis = System.currentTimeMillis();
             Date date = new java.sql.Date(millis);
 
-            Order order = new Order(user.getLogin(), "", Integer.parseInt(price_field.getText()), "Ordered", "", date);
+            Order order = new Order(user.getLogin(), "", Integer.parseInt(price_field.getText()), "" +
+                    "Ordered", "", date);
             int id = orderdao.insertInt(order);
 
             RoomController.setID(id);

@@ -19,16 +19,16 @@ import java.util.regex.Pattern;
 public class RegistrationController {
     private UserDAO userdao = new UserDAO();
 
-    public AnchorPane reg_field;
-    public Button reg_button;
-    public Label regtext_start;
-    public ChoiceBox<String> reg_choice_role;
-    public TextField reg_enter_name;
-    public TextField sign_enter_name;
-    public Button sign_in;
-    public PasswordField reg_enter_password;
-    public PasswordField sign_enter_password;
-    public Label closepanel_text;
+    @FXML AnchorPane reg_field;
+    @FXML Button reg_button;
+    @FXML Label regtext_start;
+    @FXML ChoiceBox<String> reg_choice_role;
+    @FXML TextField reg_enter_name;
+    @FXML TextField sign_enter_name;
+    @FXML Button sign_in;
+    @FXML PasswordField reg_enter_password;
+    @FXML PasswordField sign_enter_password;
+    @FXML Label closepanel_text;
 
     private ObservableList<String> roles = FXCollections.observableArrayList("Visitor", "Chef", "Director");
 
